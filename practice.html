@@ -1,0 +1,370 @@
+<html lang="en">
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<style>
+    img {
+        max-height: 180px;
+    }
+
+    #ex2 input {
+        text-transform: lowercase;
+    }
+
+    @media (max-width: 576px) {
+        iframe {
+            height: 75vmax;
+        }
+    }
+
+    @media (min-width: 577px) {
+        iframe {
+            height: 90%;
+        }
+    }
+</style>
+
+<body style="background-image: url('./tapiz.jpeg')">
+<div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item bg-light    ">
+            <a class="nav-link active text-secondary" id="home-tab" data-toggle="tab" href="#home" role="tab"
+               aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item bg-light">
+            <a class="nav-link text-secondary" id="ej1-tab" data-toggle="tab" href="#ej1" role="tab" aria-controls="ej1"
+               aria-selected="false">Exercise 1</a>
+        </li>
+        <li class="nav-item bg-light    ">
+            <a class="nav-link text-secondary" id="ej2-tab" data-toggle="tab" href="#ej2" role="tab" aria-controls="ej2"
+               aria-selected="false">Exercise 2</a>
+        </li>
+        <li class="nav-item bg-light    ">
+            <a class="nav-link text-secondary" id="ej3-tab" data-toggle="tab" href="#ej3" role="tab" aria-controls="ej3"
+               aria-selected="false">Exercise 3</a>
+        </li>
+    </ul>
+    <div class="tab-content bg-transparent" id="myTabContent" style=" height: 90%">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="jumbotron">
+                <div class="text-center h2">
+                    Do you like animals?<br/>
+
+                    Do you have a pet?<br/>
+
+                    Which animals are the most common pets?<br/>
+
+                </div>
+                <div class="row">
+                    <div class="col-6 col-xl-3">
+                        <img src="Camilo.jpeg" class="rounded" alt="...">
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <img src="cat.jpeg" class="rounded" alt="...">
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <img src="tarantula.jpeg" class="rounded" alt="...">
+                    </div>
+                    <div class="col-6 col-xl-3">
+                        <img src="turtle.jpeg" class="rounded" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary float-right"
+                                onclick="document.getElementById('ej1-tab').click()">Exercise 1
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ej1" role="tabpanel" aria-labelledby="ej1-tab">
+            <div class="jumbotron">
+                <div class="card col-6 offset-3">
+                    <div class="card-body">
+                        <p class="card-text">Take a look at this video and answer the questions.</p>
+                    </div>
+                    <video class="card-img-top" width="320" height="240" controls>
+                        <source src="hachi.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="form-group">
+                    <form id="ex1">
+                        <div class="row">
+                            <div class="col-12">
+                                <label>1. The woman is surprised when she sees the puppy because</label><br>
+                                <input type="radio" required name="q1" id="q1o1" value="0">
+                                <label for="q1o1">she is afraid of the dog</label><br>
+                                <input type="radio" name="q1" id="q1o2" value="1">
+                                <label for="q1o2">she really likes the dog</label>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label>2. Antonia is</label><br>
+                                <input type="radio" required name="q2" id="q2o1" value="1">
+                                <label for="q2o1">the cat's name</label><br>
+                                <input type="radio" name="q2" id="q2o2" value="0">
+                                <label for="q2o2">the woman's name</label>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label>3. The man buys</label><br>
+                                <input type="radio" required name="q3" id="q3o1" value="0">
+                                <label for="q3o1">a hot dog</label><br>
+                                <input type="radio" name="q3" id="q3o2" value="1">
+                                <label for="q3o2">a cup of coffee</label>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button class="btn btn-success" type="submit">Check Answers</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ej2" role="tabpanel" aria-labelledby="ej2-tab">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col">
+                        <h1>Puppy Training Tips</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>Gap-fill exercise</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Read the text and fill in the blanks with themissing adjectives </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-12">
+                        <iframe type="application/pdf" width="100%" src="reading.pdf" frameborder="0"></iframe>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class="form-group">
+                            <form id="ex2" class="form-inline">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group input-group-sm">
+                                            1. Golden Retrievers are <input name="q1" type="text" autocomplete="off"
+                                                                            class="from-control"
+                                                                            required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text" title="F...">?</div>
+                                            </div>
+                                            dogs
+                                        </div>
+                                        <div class="input-group input-group-sm">
+                                            and they are <input name="q2" type="text" autocomplete="off"
+                                                                class="from-control" required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text" title="G...">?</div>
+                                            </div>
+                                            with kids.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group input-group-sm">
+                                            2. These puppies are easy to <input name="q3" type="text"
+                                                                                autocomplete="off" class="from-control"
+                                                                                required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text" title="T...">?</div>
+                                            </div>
+                                        </div>
+                                        <div class="input-group input-group-sm">
+                                            because they are very <input name="q4" type="text" autocomplete="off"
+                                                                         class="from-control"
+                                                                         required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text" title="L...">?</div>
+                                            </div>
+                                            .
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group input-group-sm">
+                                            3. Be sure to show the puppy you love it, and show it you are not <input
+                                                name="q5" type="text" autocomplete="off" class="from-control" required>
+                                            <div class="input-group-append">
+                                                <div class="input-group-text" title="P...">?</div>
+                                            </div>
+                                            when it makes mistakes.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-success" type="submit">Check Answers</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ej3" role="tabpanel" aria-labelledby="ej3-tab">
+            <div class="jumbotron">
+                <div class="row">Listen again and type what the speaker says</div>
+                <div class="form-group">
+                    <form class="col-12" id="ex3">
+                        <div class="row">
+                            <div class="col-6">
+                                <audio controls controlsList="nodownload">
+                                    <source src="audio1.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div class="col-6">
+                                <audio controls controlsList="nodownload">
+                                    <source src="audio3.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label>The speaker said:</label>
+                                <div class="input-group">
+                                    <input name="q1" type="text" autocomplete="off" class="from-control col-9" required="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label>The speaker said:</label>
+                                <div class="input-group">
+                                    <input name="q2" type="text" autocomplete="off" class="from-control col-9" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="alertsE3">
+                            <hr></div>
+
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button class="btn btn-success" type="submit">Check Answers</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    Array.from(document.forms).forEach(formulario => {
+        Array.from(formulario.elements).forEach(element => {
+            element.oninvalid = function (e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    e.target.setCustomValidity('You must provide an answer for every question');
+                }
+            };
+            element.oninput = function (e) {
+                e.target.setCustomValidity("");
+            };
+        })
+    });
+    document.forms['ex1'].addEventListener('submit', (event) => {
+        event.preventDefault();
+        let answers = event.target.elements;
+        let result = parseFloat((parseInt(answers.q1.value) + parseInt(answers.q2.value) + parseInt(answers.q3.value)) / 3) * 100;
+        let message = '';
+        if (result > 90) {
+            message = "You did great!";
+        } else if (result > 70) {
+            message = "Good job";
+        } else {
+            message = "Try harder next time"
+        }
+
+        alert("Your score is " + Math.round(result * 100) / 100 + "%\n" + message)
+    });
+    document.forms['ex2'].addEventListener('submit', (event) => {
+        event.preventDefault();
+        let answers = event.target.elements;
+        let result = 0;
+        result += answers.q1.value.trim().toLowerCase() === 'friendly' ? 1 : 0;
+        result += answers.q2.value.trim().toLowerCase() === 'great' ? 1 : 0;
+        result += answers.q3.value.trim().toLowerCase() === 'train' ? 1 : 0;
+        result += answers.q4.value.trim().toLowerCase() === 'loyal' ? 1 : 0;
+        result += answers.q5.value.trim().toLowerCase() === 'pleased' ? 1 : 0;
+        result = parseFloat(result / 5) * 100;
+        let message = '';
+        if (result > 90) {
+            message = "You did great!";
+        } else if (result > 70) {
+            message = "Good job";
+        } else {
+            message = "Try harder next time"
+        }
+        alert("Your score is " + Math.round(result * 100) / 100 + "%\n" + message)
+    });
+    document.forms['ex3'].addEventListener('submit', (event) => {
+        event.preventDefault();
+        let answers = event.target.elements;
+        let result = 0;
+        const alerts = document.getElementById('alertsE3');
+        const answer1 =  answers.q1.value.trim().toLowerCase() === "oh, he's gorgeous!";
+        alerts.innerHTML = '';
+        if(!answer1){
+            node = document.createElement('DIV');
+            node.setAttribute('class', 'alert alert-danger');
+            node.setAttribute('role', 'alert');
+            node.innerText = "The correct answer for the first question is 'Oh, he's gorgeous!'";
+            alerts.append(node);
+        }
+        const answer2 =  answers.q2.value.trim().toLowerCase() === 'this dog is just fabulous!';
+        if(!answer2){
+            node = document.createElement('DIV');
+            node.setAttribute('class', 'alert alert-danger');
+            node.setAttribute('role', 'alert');
+            node.innerText = "The correct answer for the second question is 'This dog is just fabulous!'";
+            alerts.append(node);
+        }
+        node = document.createElement('HR');
+        alerts.append(node);
+
+        result += answer1 ? 1 : 0;
+        result += answer2 ? 1 : 0;
+        result = parseFloat(result / 2) * 100;
+        let message = '';
+        if (result > 90) {
+            message = "You did great!";
+        } else if (result > 50) {
+            message = "Good job";
+        } else {
+            message = "Try harder next time"
+        }
+        alert("Your score is " + Math.round(result * 100) / 100 + "%\n" + message)
+    });
+</script>
+</html>
